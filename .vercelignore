@@ -1,0 +1,5 @@
+node_modules
+.git
+Dockerfile
+public/ichigo-icon.png
+public/bleach-pace-poster-source.jpg
