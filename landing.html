@@ -10,12 +10,10 @@
 </style>
 </head>
 <body><div class="shell">
-<header><img src="/icon.png" alt="">Bleach Pace <span class="eyebrow">FOR STREMIO</span></header>
-<main class="hero"><div><div class="eyebrow">LESS FILLER. MORE BLEACH.</div><h1>Your next<br>Bleach watch.</h1><p>A shorter path through the original series, following Bleach Pace’s Trimmed guide. Original episode numbers, canon labels, and thumbnails—all inside Stremio.</p><div class="facts"><span>160 episodes</span><span>Canon labels</span><span>No account needed</span></div><a class="install" id="install" href="/manifest.json">Install in Stremio ↗</a><div class="manual"><label for="manifest">Or paste this link into Stremio → Add-ons</label><div class="copyrow"><input id="manifest" readonly><button id="copy" type="button">Copy</button></div><div id="status" role="status" aria-live="polite"></div></div></div><img class="poster" src="/cover-v4.png" alt="Bleach Pace poster"></main>
-<p class="note">After installing, open <strong>Bleach Pace</strong> in Discover. You’ll need your own compatible stream add-on. This add-on provides a watch guide, not video streams. The Trimmed route skips some canon and mixed episodes. Original series only; Thousand-Year Blood War is excluded.</p>
-<footer>Independent fan project. Watch selection: <a href="https://bleachpace.com/?path=trimmed">Bleach Pace</a> · Classifications: <a href="https://www.animefillerlist.com/shows/bleach">Anime Filler List</a>. Not affiliated with Stremio or Bleach’s creators.</footer>
+<header><img src="/icon.png" alt="">Bleach Pace</header>
+<main class="hero"><div><h1>Your next<br>Bleach watch.</h1><p>A shorter path through the original series, following <a href="https://bleachpace.com/?path=trimmed">Bleach Pace’s Trimmed guide</a>. Original episode numbers, canon labels, and thumbnails—all inside Stremio.</p><div class="facts"><span>160 episodes</span><span>Canon labels</span><span>All in Stremio</span></div><a class="install" id="install" href="/manifest.json">Install in Stremio</a><div class="manual"><label for="manifest">Or paste this link into Stremio → Add-ons</label><div class="copyrow"><input id="manifest" readonly><button id="copy" type="button">Copy</button></div></div></div><img class="poster" src="/cover-v4.png" alt="Bleach Pace poster"></main>
 </div><script>
 const url=location.origin+'/manifest.json';document.getElementById('manifest').value=url;
 document.getElementById('install').href='stremio://'+location.host+'/manifest.json';
-document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url);document.getElementById('status').textContent='Copied. Paste into Stremio’s Add-ons search.'}catch{document.getElementById('manifest').select();document.getElementById('status').textContent='Select and copy the link above.'}});
+document.getElementById('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(url);document.getElementById('copy').textContent='Copied'}catch{document.getElementById('manifest').select()}});
 </script></body></html>
