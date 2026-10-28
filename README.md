@@ -1,5 +1,7 @@
 # Bleach Pace for Stremio
 
+**Install:** [bleach-pace.vercel.app](https://bleach-pace.vercel.app/) · [Manifest](https://bleach-pace.vercel.app/manifest.json)
+
 A simple install page and Stremio metadata add-on for the original Bleach series. The catalog contains 160 whole original episodes selected by the default [Bleach Pace Trimmed route](https://bleachpace.com/?path=trimmed), with optional episode 202 excluded. Each episode has a canon/mixed label and a thumbnail. No video streams are supplied.
 
 ## Use
@@ -64,3 +66,4 @@ No accounts, API keys, tracking, database or streaming media are part of this ad
 `npm test` validates classification coverage and boundaries, Trimmed membership, preserved playback IDs, unsupported requests, real HTTP CORS/caching, all 160 thumbnail payloads, poster/background size and aspect ratio, logo transparency, and the Vercel entry's public HTTPS URLs and landing page. It needs localhost access, but no internet.
 
 Update snapshots manually, verify against their sources, run tests, then commit and deploy. Metadata caches for five minutes; artwork uses versioned filenames. Older library shortcuts may refer to retired metadata IDs—open the current entry from Discover. The Node SDK is pinned at 1.6.10 with patched transitive overrides for path-to-regexp 0.1.13 and tmp 0.2.7; HTTP tests should accompany dependency updates.
+
